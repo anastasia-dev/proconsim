@@ -1,0 +1,1 @@
+<a href="tel:++7%20%288442%29%2022-31-50"><span style="font-size: 14pt;">+7 (8442) 22-31-50&nbsp;</span><span style="font-size: 14pt;"> </span></a><span style="font-size: 14pt;">(Многоканальный) </span><br>

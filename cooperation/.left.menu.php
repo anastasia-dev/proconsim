@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Доставка", 
+		"/cooperation/delivery/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Прайс-лист", 
+		"/cooperation/price-list/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Каталог", 
+		"/cooperation/сatalog/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сделать заказ", 
+		"/cooperation/make-order/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Стать партнером", 
+		"/cooperation/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

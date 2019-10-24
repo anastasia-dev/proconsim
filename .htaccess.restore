@@ -1,0 +1,217 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Options -Indexes
+ErrorDocument 404 /404.php
+
+Redirect 301 /catalog/nasosy/  https://proconsim.ru/
+Redirect 301 /catalog/krany_stalnye/  https://proconsim.ru/catalog/truboprovodnaya_armatura/krany_stalnye/
+Redirect 301 /catalog/zadvizhki_chugunnye_stalnye/  https://proconsim.ru/catalog/truboprovodnaya_armatura/zadvizhki_chugunnye_stalnye/
+Redirect 301 /catalog/krany_latunnye/  https://proconsim.ru/catalog/truboprovodnaya_armatura/krany_latunnye/
+Redirect 301 /catalog/ventili_latunnye_chugunnye_stalnye_/  https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/
+Redirect 301 /catalog/klapany_obratnye_predokhranitelnye_reguliruyushchie_balansirovochnye/  https://proconsim.ru/catalog/truboprovodnaya_armatura/klapany_obratnye_predokhranitelnye_reguliruyushchie_balansirovochnye/
+Redirect 301 /catalog/elektroprivody/  https://proconsim.ru/catalog/truboprovodnaya_armatura/elektroprivody/
+Redirect 301 /catalog/perekhodnik_pfrk_drk/  https://proconsim.ru/catalog/truboprovodnaya_armatura/perekhodnik_pfrk_drk/
+Redirect 301 /catalog/klapany_obratnye/  https://proconsim.ru/catalog/truboprovodnaya_armatura/klapany_obratnye/
+Redirect 301 /catalog/radiatory_alyuminievye_chugunnye_bimetallicheskie_stalnye_panelnye/  https://proconsim.ru/catalog/otopitelnoe_oborudovanie/radiatory_alyuminievye_chugunnye_bimetallicheskie_stalnye_panelnye/
+Redirect 301 /catalog/komplektuyushchie_i_aksessuary/  https://proconsim.ru/catalog/otopitelnoe_oborudovanie/komplektuyushchie_i_aksessuary/
+Redirect 301 /catalog/konvektory/  https://proconsim.ru/catalog/otopitelnoe_oborudovanie/konvektory/
+Redirect 301 /catalog/armatura_radiatornaya_i_komplektuyushchie/  https://proconsim.ru/catalog/otopitelnoe_oborudovanie/armatura_radiatornaya_i_komplektuyushchie/
+Redirect 301 /catalog/bloki_kollektorov/  https://proconsim.ru/catalog/otopitelnoe_oborudovanie/bloki_kollektorov/
+Redirect 301 /catalog/klapany_i_elementy_termostaticheskie/  https://proconsim.ru/catalog/otopitelnoe_oborudovanie/klapany_i_elementy_termostaticheskie/
+Redirect 301 /catalog/elevatory/  https://proconsim.ru/catalog/otopitelnoe_oborudovanie/elevatory/
+Redirect 301 /catalog/truby_i_fitingi_pp/  https://proconsim.ru/catalog/truby_i_fitingi/truby_i_fitingi_pp/
+Redirect 301 /catalog/truby_i_fitingi_pex/  https://proconsim.ru/catalog/truby_i_fitingi/truby_i_fitingi_pex/
+Redirect 301 /catalog/truby_i_fitingi_pe/  https://proconsim.ru/catalog/truby_i_fitingi/truby_i_fitingi_pe/
+Redirect 301 /catalog/filtry_chugunnye_latunnye/  https://proconsim.ru/catalog/zashchita_truboprovoda/filtry_chugunnye_latunnye/
+Redirect 301 /catalog/kompensatory/  https://proconsim.ru/catalog/zashchita_truboprovoda/kompensatory/
+Redirect 301 /catalog/gryazeviki/  https://proconsim.ru/catalog/zashchita_truboprovoda/gryazeviki/
+Redirect 301 /catalog/kondensatootvodchiki/  https://proconsim.ru/catalog/zashchita_truboprovoda/kondensatootvodchiki/
+Redirect 301 /catalog/vozdukhootvodchiki/  https://proconsim.ru/catalog/zashchita_truboprovoda/vozdukhootvodchiki/
+Redirect 301 /catalog/vantuzy/  https://proconsim.ru/catalog/zashchita_truboprovoda/vantuzy/
+Redirect 301 /catalog/otvody_zaglushki/  https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/otvody_zaglushki/
+Redirect 301 /catalog/flantsy/  https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/flantsy/
+Redirect 301 /catalog/fitingi_rezbovye_chugunnye_stalnye_latunnye/  https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/
+Redirect 301 /catalog/perekhody/  https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/perekhody/
+Redirect 301 /catalog/troyniki_/  https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/troyniki_/
+Redirect 301 /catalog/gidranty/  https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/gidranty/
+Redirect 301 /catalog/truby_kanalizatsionnye_pp_pvkh_chk/  https://proconsim.ru/catalog/sistemy_kanalizatsii/truby_kanalizatsionnye_pp_pvkh_chk/
+Redirect 301 /catalog/fasonnye_chasti/  https://proconsim.ru/catalog/sistemy_kanalizatsii/fasonnye_chasti/
+Redirect 301 /catalog/lyuki_dozhdepriemniki_trapy_kovera_voronki/  https://proconsim.ru/catalog/sistemy_kanalizatsii/lyuki_dozhdepriemniki_trapy_kovera_voronki/
+Redirect 301 /catalog/vodoschetchiki/  https://proconsim.ru/catalog/kipia/vodoschetchiki/
+Redirect 301 /catalog/manometry/  https://proconsim.ru/catalog/kipia/manometry/
+Redirect 301 /catalog/termometry_opravy_bobyshki/  https://proconsim.ru/catalog/kipia/termometry_opravy_bobyshki/
+Redirect 301 /catalog/teploschetchiki/  https://proconsim.ru/catalog/kipia/teploschetchiki/
+Redirect 301 /catalog/avtomatika/  https://proconsim.ru/catalog/kipia/avtomatika/
+Redirect 301 /catalog/vanny_i_poddony/  https://proconsim.ru/catalog/santekhnicheskoe_oborudovonie/vanny_i_poddony/
+Redirect 301 /catalog/unitazy_bide_pissuary/  https://proconsim.ru/catalog/santekhnicheskoe_oborudovonie/unitazy_bide_pissuary/
+Redirect 301 /catalog/umyvalniki_moyki_podstolya/  https://proconsim.ru/catalog/santekhnicheskoe_oborudovonie/umyvalniki_moyki_podstolya/
+Redirect 301 /catalog/smesiteli_i_komplektuyushchie/  https://proconsim.ru/catalog/santekhnicheskoe_oborudovonie/smesiteli_i_komplektuyushchie/
+Redirect 301 /catalog/polotentsesushiteli_i_komplektuyushchie/  https://proconsim.ru/catalog/santekhnicheskoe_oborudovonie/polotentsesushiteli_i_komplektuyushchie/
+Redirect 301 /catalog/sifony/  https://proconsim.ru/catalog/santekhnicheskoe_oborudovonie/sifony/
+Redirect 301 /catalog/gibkaya_podvodka/  https://proconsim.ru/catalog/santekhnicheskoe_oborudovonie/gibkaya_podvodka/
+Redirect 301 /catalog/teploizolyatsiya/  https://proconsim.ru/catalog/teploizolyatsiya_uplotneniya/teploizolyatsiya/
+Redirect 301 /catalog/prokladki/  https://proconsim.ru/catalog/teploizolyatsiya_uplotneniya/prokladki/
+Redirect 301 /catalog/uplotneniya/  https://proconsim.ru/catalog/teploizolyatsiya_uplotneniya/uplotneniya/
+Redirect 301 /catalog/khomuty/  https://proconsim.ru/catalog/krepezh_i_metizy/khomuty/
+Redirect 301 /catalog/bolty_gayki_shpilki/  https://proconsim.ru/catalog/krepezh_i_metizy/bolty_gayki_shpilki/
+Redirect 301 /catalog/gayki/  https://proconsim.ru/catalog/krepezh_i_metizy/gayki/
+Redirect 301 /catalog/shayby/  https://proconsim.ru/catalog/krepezh_i_metizy/shayby/
+Redirect 301 /catalog/kr-i-metizy-prochee/  https://proconsim.ru/catalog/krepezh_i_metizy/kr-i-metizy-prochee/
+Redirect 301 /catalog/nasosy-second/  https://proconsim.ru/catalog/nasosy/nasosy-second/
+#new 03/09/18
+Redirect 301 /catalog/truboprovodnaya_armatura/zadvizhki_chugunnye_stalnye/ https://proconsim.ru/catalog/truboprovodnaya_armatura/zadvizhki/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/
+Redirect 301 /catalog/truboprovodnaya_armatura/klapany_obratnye_predokhranitelnye_reguliruyushchie_balansirovochnye/ https://proconsim.ru/catalog/truboprovodnaya_armatura/klapany/
+Redirect 301 /catalog/otopitelnoe_oborudovanie/radiatory_alyuminievye_chugunnye_bimetallicheskie_stalnye_panelnye/ https://proconsim.ru/catalog/otopitelnoe_oborudovanie/radiatory/
+Redirect 301 /catalog/otopitelnoe_oborudovanie/armatura_radiatornaya_i_komplektuyushchie/ https://proconsim.ru/catalog/otopitelnoe_oborudovanie/armatura/
+Redirect 301 /catalog/zashchita_truboprovoda/filtry_chugunnye_latunnye/ https://proconsim.ru/catalog/zashchita_truboprovoda/filtry/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/
+Redirect 301 /catalog/sistemy_kanalizatsii/truby_kanalizatsionnye_pp_pvkh_chk/ https://proconsim.ru/catalog/sistemy_kanalizatsii/truby_kanalizatsionnye/
+#new 01/11/18
+Redirect 301 /catalog/kip/manometry/ https://proconsim.ru/catalog/kipia/manometry/
+#new 19/12/18
+Redirect 301 /catalog/armatura_radiatornaya_i_komplektuyushchie/element_termostaticheskiy_ra_5062_s_zhidkostnym_vstroennym_temperaturnym_datchikom_danfoss_013g5062_1702/ https://proconsim.ru/catalog/otopitelnoe_oborudovanie/armatura/element_termostaticheskiy_ra_5062_s_zhidkostnym_vstroennym_temperaturnym_datchikom_danfoss_013g5062_1531/
+Redirect 301 /catalog/gayki/gayka_m22_s34_gost_5915_70_gost_5927_70/ https://proconsim.ru/catalog/krepezh_i_metizy/gayki/gayka_m22_s34_gost_5915_70_gost_5927_70_2029/
+Redirect 301 /catalog/krany_latunnye/kran_gaz_11b27p_du50_ru16_rychag_m_m_baz/ https://proconsim.ru/catalog/truboprovodnaya_armatura/krany_latunnye/kran_latunnyy_sharovyy_gazovyy_du50_pn_16_rychag_mufta_mufta_220_gallop_5654/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/bochonok_otsink_staln_50_iz_otsink_vgp_trub/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/bochonok_stalnoy_otsinkovannyy_du50_iz_vgp_trub_1100/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/bochonok_staln_50_iz_staln_vgp_trub/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/bochonok_stalnoy_du50_iz_vgp_trub_1047/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/bochonok_staln_65_iz_staln_vgp_trub/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/bochonok_stalnoy_du65_iz_vgp_trub_1048/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/kontrgayka_chugun_50/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/kontrgayka_chugunnaya_du_50_1108/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/kontrgayka_chugun_ts_32_otsink/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/kontrgayka_chugunnaya_du_32_otsinkovannaya_1130/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/kontrgayka_latun_nikel_15/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/kontrgayka_latunnaya_nikelirovannaya_du_15_1144/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/mufta_staln_20_gost_8966_75/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/mufta_stalnaya_du_20_gost_8966_75_1124/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/mufta_staln_40_ts_gost_8966_75_otsink/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/mufta_stalnaya_du_40_gost_8966_75_otsinkovannaya_1141/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/mufta_staln_80_gost_8966_75/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/mufta_stalnaya_du_80_gost_8966_75_1127/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/nippel_latun_25_15_shtuts_shtuts_perekhodnyy/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/nippel_latunnyy_du_25_15_shtutser_shtutser_perekhodnyy_1213/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/nippel_latun_nikel_40_shtuts_shtuts/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/nippel_latunnyy_nikelirovannyy_du_40_shtutser_shtutser_1212/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/sgon_otsink_staln_50_gost_8969_75_iz_otsink_vgp_trub/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/sgon_stalnoy_otsinkovannyy_50_gost_8969_75_iz_vgp_trub_1056/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/sgon_staln_15_gost_8969_75_iz_staln_vgp_trub/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/sgon_stalnoy_otsinkovannyy_15_gost_8969_75_iz_vgp_trub_1053/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/sgon_staln_32_gost_8969_75_iz_staln_vgp_trub/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/sgon_stalnoy_otsinkovannyy_32_gost_8969_75_iz_vgp_trub_1055/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/sgon_staln_40_gost_8969_75_iz_staln_vgp_trub/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/sgon_stalnoy_otsinkovannyy_40_gost_8969_75_iz_vgp_trub_1056/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/sgon_staln_50_gost_8969_75_iz_staln_vgp_trub/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/sgon_stalnoy_otsinkovannyy_50_gost_8969_75_iz_vgp_trub_1056/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/troynik_latun_nikel_20_shtuts_muft_shtuts/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/troynik_latunnyy_nikelirovannyy_20_shtutser_mufta_shtutser_1322/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/udlinitel_latun_15_l30mm_muft_shtuts/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/udlinitel_latunnyy_du_15_l30mm_mufta_shtutser_1418/
+Redirect 301 /catalog/detali_stalnykh_truboprovodov/fitingi_rezbovye_chugunnye_stalnye_latunnye/ugolnik_latun_nikel_20_muft_muft/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/fitingi/ugolnik_latunnyy_nikelirovannyy_du_20_mufta_mufta_1256/
+Redirect 301 /catalog/elektroprivody/elektroprivod_gz_a_150_24_0_37kvt_150nm/ https://proconsim.ru/catalog/truboprovodnaya_armatura/elektroprivody/elektroprivod_gz_a_150_24_0_37kvt_150nm_5258/
+Redirect 301 /catalog/fasonnye_chasti/reviziya_pp_polipropilen_d_naruzhney_kanalizatsii_dn_110_s_kryshkoy_ptk_5906/ https://proconsim.ru/catalog/sistemy_kanalizatsii/fasonnye_chasti/reviziya_pp_polipropilen_d_kanalizatsii_dn110_s_kryshkoy_s_uplotnitelnym_koltsom_ptk_5047/
+Redirect 301 /catalog/fasonnye_chasti/trap_chk_chugunnaya_kanalizatsiya_100_vertikalnyy_kruglyy/ https://proconsim.ru/catalog/sistemy_kanalizatsii/fasonnye_chasti/trap_chk_chugunnaya_kanalizatsiya_dn_100_vertikalnyy_kruglyy_krontif_4843/
+Redirect 301 /catalog/filtry_chugunnye_latunnye/filtr_setchatyy_fvf_s_probkoy_chugun_ru_16_flantsevyy_tmaks_300_s_du_40_danfoss_065b7744/ https://proconsim.ru/catalog/zashchita_truboprovoda/filtry/filtr_setchatyy_fvf_s_probkoy_chugun_pn_16_flantsevyy_du_40_danfoss_065b7744_3656/
+Redirect 301 /catalog/kip/manometry/manometr_mt_100_do_0_6mpa_g1_2/ https://proconsim.ru/catalog/kipia/manometry/manometr_mt_100_do_0_6mpa_g1_2_bagoriya_0932/
+Redirect 301 /catalog/klapany_obratnye_predokhranitelnye_reguliruyushchie_balansirovochnye/klapan_balansirovochnyy_avtomaticheskiy_asv_pv_ru_16_du_40_danfoss_003l7605_1702/ https://proconsim.ru/catalog/truboprovodnaya_armatura/klapany/klapan_balansirovochnyy_avtomaticheskiy_asv_pv_pn_16_du_40_danfoss_003l7605_1708/
+Redirect 301 /catalog/kompensatory/kompensator_stalnoy_rezinovyy_flantsevyy_du100_ru10_seagull/ https://proconsim.ru/catalog/zashchita_truboprovoda/kompensatory/kompensator_stalnoy_rezinovyy_flantsevyy_du_100_pn_10_seagull_0723/
+Redirect 301 /catalog/krany_latunnye/kran_shar_maev_lat_komb_du15_ru25_rych_m_m_sglprof/ https://proconsim.ru/catalog/truboprovodnaya_armatura/krany_latunnye/kran_latunnyy_sharovyy_s_kranom_maevskogo_kombinirovannyy_du_15_pn25_rychag_mufta_mufta_sglprof_5632/
+Redirect 301 /catalog/krany_stalnye/kran_11s42p_du_50_poln_ru16_flantsevyy_93mm_breeze/ https://proconsim.ru/catalog/truboprovodnaya_armatura/krany_stalnye/kran_stalnoy_sharovyy_11s42p_du_50_pn_16_flantsevyy_polnyy_prokhod_93mm_breeze_5801/
+Redirect 301 /catalog/krany_stalnye/kran_11s42p_du_80_poln_ru16_flantsevyy_125mm_breeze/ https://proconsim.ru/catalog/truboprovodnaya_armatura/krany_stalnye/kran_stalnoy_sharovyy_11s42p_du_80_pn_16_flantsevyy_polnyy_prokhod_125mm_breeze_5803/
+Redirect 301 /catalog/otopitelnoe_oborudovanie/armatura_radiatornaya_i_komplektuyushchie/element_termostaticheskiy_ra_5065_s_zhidkostnym_vstroennym_temperaturnym_datchikom_danfoss_013g5065_1703/ https://proconsim.ru/catalog/otopitelnoe_oborudovanie/armatura/element_termostaticheskiy_ra_5065_s_zhidkostnym_vstroennym_temperaturnym_datchikom_danfoss_013g5065_1531/
+Redirect 301 /catalog/otopitelnoe_oborudovanie/armatura_radiatornaya_i_komplektuyushchie/kran_maevskogo_dn20_2mm_pn10_g3_4_353850/ https://proconsim.ru/catalog/otopitelnoe_oborudovanie/armatura/kran_maevskogo_du_20_2mm_pn_10_g3_4_0621/
+Redirect 301 /catalog/otopitelnoe_oborudovanie/armatura_radiatornaya_i_komplektuyushchie/probka_chugunnaya_d_chugunnogo_radiatora_glukhaya_pravaya_0119/ https://proconsim.ru/catalog/otopitelnoe_oborudovanie/armatura/probka_chugunnaya_d_chugunnogo_radiatora_glukhaya_pravaya_5908/
+Redirect 301 /catalog/otopitelnoe_oborudovanie/radiatory_alyuminievye_chugunnye_bimetallicheskie_stalnye_panelnye/radiator_chugunnyy_ms_140m4_500_175vt_7_sektsionnyy_lugansk/ https://proconsim.ru/catalog/otopitelnoe_oborudovanie/radiatory/radiator_chugunnyy_ms_140m4_500_175vt_7_sektsionnyy_lugansk_5900/
+Redirect 301 /catalog/otvody_zaglushki/otvod_stalnoy_krutoizognutyy_90gr_du_133_ispolnenie_2_gost_17375_2001/ https://proconsim.ru/catalog/detali_stalnykh_truboprovodov/otvody_zaglushki/otvod_stalnoy_krutoizognutyy_90gr_du133_ispolnenie_2_gost_17375_2001_1457/
+Redirect 301 /catalog/truboprovodnaya_armatura/klapany_obratnye_predokhranitelnye_reguliruyushchie_balansirovochnye/adapter_d_klapanov_ra_n_ra_c_danfoss_082f1071/ https://proconsim.ru/catalog/truboprovodnaya_armatura/klapany/adapter_d_klapanov_ra_n_ra_c_danfoss_082f1071_1849/
+Redirect 301 /catalog/truboprovodnaya_armatura/klapany_obratnye_predokhranitelnye_reguliruyushchie_balansirovochnye/klapan_solenoidnyy_normalno_zakrytyy_bez_el_magnitnykh_katushek_membrana_epdm_ev220b_du_20_kvs_8_danfoss_032u7120_2320/ https://proconsim.ru/catalog/truboprovodnaya_armatura/klapany/klapan_solenoidnyy_normalno_zakrytyy_bez_el_magnitnykh_katushek_membrana_epdm_ev220b_du_20_kvs_8_danfoss_032u7120_2428/
+Redirect 301 /catalog/truboprovodnaya_armatura/klapany_obratnye_predokhranitelnye_reguliruyushchie_balansirovochnye/reg_davl_lat_muft_krdv_du15_ru16_rnastr_2_p_man/ https://proconsim.ru/catalog/truboprovodnaya_armatura/klapany/regulyator_davleniya_latunnyy_krdv_du_15_pn_16_muftovyy_r_nastr_2_p_manometr_0544/
+Redirect 301 /catalog/truboprovodnaya_armatura/klapany_obratnye_predokhranitelnye_reguliruyushchie_balansirovochnye/reg_raskh_davl_urrd_m_du25_ru16_1_6_6_styazh_b_man/ https://proconsim.ru/catalog/truboprovodnaya_armatura/klapany/regulyator_raskhoda_davleniya_urrd_m_du_25_pn_16_1_6_6_styazhnoy_b_manometra_obsidant_0541/
+Redirect 301 /catalog/truboprovodnaya_armatura/klapany_obratnye_predokhranitelnye_reguliruyushchie_balansirovochnye/regulyator_temperatury_ogranichitel_temp_obr_vody_lat_ru_16_fjv_du_25_danfoss_003n4250/ https://proconsim.ru/catalog/truboprovodnaya_armatura/klapany/regulyator_temperatury_latunnyy_ogranichitel_tempemperatury_obratnoy_vody_pn_16_fjv_du_25_danfoss_003n4250_2541/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_chugunnyy_15ch8p_15ch18p_du_15/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_chugunnyy_15ch8p_15ch18p_du_15_mufta_mufta_0306/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_chugunnyy_15ch9p_15ch19p_du_25/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_chugunnyy_15ch9p_15ch19p_du_25_flantsevyy_0310/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_chugunnyy_15ch9p_15ch19p_du_50/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_chugunnyy_15ch9p_15ch19p_du_50_flantsevyy_0312/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_chugunnyy_15kch16nzh_du_50/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_chugunnyy_15kch16nzh_du_50_flantsevyy_0321/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_chugunnyy_15kch16p1_du_50/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_chugunnyy_15kch16p1_du_50_flantsevyy_0318/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_chugunnyy_15kch16p1_du_65/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_chugunnyy_15kch16p1_du_65_flantsevyy_0319/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_du15_ru160_15nzh54bk_g1_2_m33kh1_5_do300gr_2559/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_stalnoy_15nzh54bk_du_15_pn_160_g1_2_m33kh1_5_do300gr_0343/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_latunnyy_15b1p_bologoe_do_200_du_15/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_latunnyy_15b1p_baz_do_200s_du_15_0255/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_latunnyy_15b1p_bologoe_do_200_du_20/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_latunnyy_odnotip_15b1p_du_20_pn_16_do_200gr_0259/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_latunnyy_15b3r_bologoe_do_70_du_50/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_latunnyy_15b1p_baz_do_200s_du_50_3839/
+Redirect 301 /catalog/truboprovodnaya_armatura/ventili_latunnye_chugunnye_stalnye_/ventil_latunnyy_15b3r_vzza_du_25/ https://proconsim.ru/catalog/truboprovodnaya_armatura/ventili/ventil_latunnyy_15b3r_vzza_du_25_0248/
+Redirect 301 /catalog/armatura_radiatornaya_i_komplektuyushchie/vint_m4_6mm_danfoss_088h2350_3328/ https://proconsim.ru/catalog/otopitelnoe_oborudovanie/armatura/vint_m4_6mm_danfoss_088h2350_3243/
+Redirect 301 /catalog/tables/ https://proconsim.ru/support/conversion-table/
+Redirect 301 /catalog/zakaz/ https://proconsim.ru/
+
+php_value max_execution_time 120
+php_value display_errors 0
+php_value memory_limit 300M
+
+
+<IfModule mod_php5.c>
+	php_flag allow_call_time_pass_reference 1
+	php_flag session.use_trans_sid off
+
+
+	#php_value display_errors 1
+
+	#php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+	
+	RewriteCond %{HTTP_HOST} ^www.proconsim.ru$ [NC]
+	RewriteCond %{REQUEST_URI} ^/sitemap_files\.xml.*$
+	RewriteRule ^(.*)$ https://proconsim.ru/$1 [G,L]
+
+	RewriteCond %{HTTP_HOST} ^www.proconsim.ru$ [NC]
+	RewriteRule ^(.*)$ https://proconsim.ru/$1 [R=301,L]
+RewriteBase /
+
+#add /
+    #RewriteCond %{REQUEST_URI} ^(.*/[^/\.]+)$
+    #RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1/ [R=301,L]
+	
+	#RewriteCond %{REQUEST_FILENAME} !-f
+	#RewriteCond %{REQUEST_FILENAME} !-l
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteCond %{REQUEST_URI} ^(.*/[^/\.]+)$
+	#RewriteRule ^(.*)$ https://proconsim.ru/$1/ [R=301,L]
+
+
+    RewriteCond %{REQUEST_URI} ^(.*)/$
+    RewriteRule .* - [L]
+    RewriteCond %{ENV:REDIRECT_STATUS} 200
+    RewriteRule .* - [L]
+    RewriteCond %{REQUEST_METHOD} =GET
+    RewriteCond %{REQUEST_URI} ^(.*)/index.php$
+    RewriteRule ^(.*)$ %1/ [R=301,L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+	RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+
+</IfModule>
+
+<IfModule mod_dir.c>
+	DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+AddType application/vnd.ms-fontobject .eot 
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/x-font-woff .woff
+AddType application/x-font-woff .woff2
+AddType image/svg+xml .svg
+	ExpiresActive on
+	ExpiresByType image/jpeg "access plus 1 year" 
+	ExpiresByType image/gif "access plus 1 year" 
+	ExpiresByType image/gif "access plus 1 year" 
+	ExpiresByType image/png "access plus 1 year" 
+	ExpiresByType font/truetype "access plus 1 year"
+ ExpiresByType font/opentype "access plus 1 year"
+ ExpiresByType application/x-font-woff   "access plus 1 year"
+ ExpiresByType image/svg+xml "access plus 1 year"
+ ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+	
+
+</IfModule>
+
+<IfModule headers_module>
+ Header set X-Content-Type-Options nosniff
+ Header set X-Frame-Options "ALLOW-FROM http://webvisor.com"
+
+</IfModule>
