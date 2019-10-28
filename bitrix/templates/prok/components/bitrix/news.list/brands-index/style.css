@@ -1,0 +1,16 @@
+.brands-slick-prev, 
+.brands-slick-next { position: absolute; display: block; height: 36px; width: 20px; line-height: 0; font-size: 36px; cursor: pointer; top: 50%; margin-top: -20px; padding: 0; border: none; outline: none;z-index: 500; color:#333;}
+.brands-slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: none; }
+.brands-slick-prev:hover:before, .brands-slick-prev:focus:before, .brands-slick-next:hover:before, .brands-slick-next:focus:before { opacity: 1; }
+.brands-slick-prev.slick-disabled:before, .brands-slick-next.slick-disabled:before { opacity: 0.25; }
+
+.brands-slick-prev:before, .brands-slick-next:before { font-family: "slick"; font-size: 20px; line-height: 1; color: white; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.brands-slick-prev { left: 0; }
+[dir="rtl"] .brands-slick-prev { left: auto; right: 0px; }
+
+.brands-slick-next { right: 0; margin-right:-8px;}
+[dir="rtl"] .brands-slick-next { left: 0px; right: auto; }
+
+
+

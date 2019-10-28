@@ -1,0 +1,15 @@
+a.stock-left {
+    font-size: 14px;
+    color: #2e313b;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+}
+
+a.stock-left-active{
+    font-size: 14px;
+    color: #337ab7;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+}

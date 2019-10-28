@@ -1,0 +1,9 @@
+.search-box form{
+	position: relative;
+}
+.top-search-submit{
+	position: absolute;
+	width: 33px;
+	height: 33px;
+	display: none !important;
+}

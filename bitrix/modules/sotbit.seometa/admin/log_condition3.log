@@ -1,0 +1,35 @@
+Array
+(
+    [ID] => 556
+    [NAME] => Тип присоединения: фланцевое DN: 40
+    [ACTIVE] => Y
+    [SEARCH] => Y
+    [SORT] => 100
+    [DATE_CHANGE] => Bitrix\Main\Type\DateTime Object
+        (
+            [value:protected] => DateTime Object
+                (
+                    [date] => 2019-05-14 14:24:50.000000
+                    [timezone_type] => 3
+                    [timezone] => Europe/Moscow
+                )
+
+        )
+
+    [SITES] => a:1:{i:0;s:2:"s1";}
+    [TYPE_OF_CONDITION] => 
+    [FILTER_TYPE] => bitrix_chpu
+    [TYPE_OF_INFOBLOCK] => catalog
+    [INFOBLOCK] => 2
+    [SECTIONS] => a:1:{i:0;s:2:"95";}
+    [RULE] => a:3:{s:8:"CLASS_ID";s:9:"CondGroup";s:4:"DATA";a:2:{s:3:"All";s:3:"AND";s:4:"True";s:4:"True";}s:8:"CHILDREN";a:2:{i:0;a:2:{s:8:"CLASS_ID";s:15:"CondIBProp:2:48";s:4:"DATA";a:2:{s:5:"logic";s:5:"Equal";s:5:"value";s:18:"фланцевое";}}i:1;a:2:{s:8:"CLASS_ID";s:15:"CondIBProp:2:59";s:4:"DATA";a:2:{s:5:"logic";s:5:"Equal";s:5:"value";s:2:"40";}}}}
+    [META] => a:13:{s:13:"ELEMENT_TITLE";s:0:"";s:16:"ELEMENT_KEYWORDS";s:0:"";s:19:"ELEMENT_DESCRIPTION";s:0:"";s:18:"ELEMENT_PAGE_TITLE";s:0:"";s:24:"ELEMENT_BREADCRUMB_TITLE";s:0:"";s:16:"TEMPLATE_NEW_URL";s:0:"";s:16:"ELEMENT_TOP_DESC";s:0:"";s:19:"ELEMENT_BOTTOM_DESC";s:0:"";s:16:"ELEMENT_ADD_DESC";s:0:"";s:21:"ELEMENT_TOP_DESC_TYPE";s:4:"html";s:24:"ELEMENT_BOTTOM_DESC_TYPE";s:4:"html";s:21:"ELEMENT_ADD_DESC_TYPE";s:4:"html";s:12:"ELEMENT_FILE";b:0;}
+    [NO_INDEX] => N
+    [STRONG] => Y
+    [PRIORITY] => 0
+    [CHANGEFREQ] => always
+    [CATEGORY_ID] => 0
+    [TAG] => 
+    [CONDITION_TAG] => N;
+    [STRICT_RELINKING] => N
+)

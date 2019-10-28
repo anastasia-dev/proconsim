@@ -1,0 +1,13 @@
+.city-select-text{
+    font-size: 14px;
+    font-family: 'OpenSansBold';
+    color: #ffffff;
+    margin-right: 10px;
+}
+.city-select-select{
+    border-radius: 5px;
+    background-color: #ededed;
+    color: #2481c4;
+    font-size: 12px;
+    font-family: 'OpenSansBold';
+}

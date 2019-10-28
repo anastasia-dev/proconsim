@@ -1,0 +1,3 @@
+<?php
+$MESS['SOTBIT_CABINET_TABLE_NAME'] = 'Название';
+$MESS['SOTBIT_CABINET_TABLE_URL'] = 'Ссылка';

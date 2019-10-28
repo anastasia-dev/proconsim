@@ -1,9 +1,22 @@
 # Add any directories, files, or patterns you don't want to be tracked by version control
 
-/bitrix
-!bitrix/templates
-!bitrix/components
-!bitrix/modules
+bitrix/activities/
+bitrix/admin/
+bitrix/backup/
+bitrix/cache/
+bitrix/css/
+bitrix/fonts/
+bitrix/gadgets/
+bitrix/image_uploader/
+bitrix/images/
+bitrix/managed_cache/
+bitrix/php_interface/dbconn.php
+bitrix/themes/
+bitrix/tools/
+bitrix/tmp/
+bitrix/wizards/
+
+
 /upload
 /image-imports
 

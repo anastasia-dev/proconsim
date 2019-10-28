@@ -1,0 +1,23 @@
+<?php
+/**
+ * Copyright (c) 2017. Sergey Danilkin.
+ */
+
+/**
+ * Created by PhpStorm.
+ * User: Sergey
+ * Date: 11/1/2017
+ * Time: 12:59 PM
+ */
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_1'] = 'января';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_2'] = 'февраля';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_3'] = 'марта';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_4'] = 'апреля';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_5'] = 'мая';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_6'] = 'июня';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_7'] = 'июля';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_8'] = 'августа';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_9'] = 'сентября';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_10'] = 'октября';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_11'] = 'ноября';
+$MESS['SOTBIT_CABINET_REVIEWS_MONTH_12'] = 'декабря';
