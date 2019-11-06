@@ -253,7 +253,7 @@ IncludeTemplateLangFile(__FILE__);
             <div class="container">
                 <div class="mp-wrap">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 catalog-menu-block">
                             <?if(preg_match('/^\/catalog\//', $APPLICATION->GetCurDir())):?>
                                 <div class="menu-wrap hidden-sm hidden-xs menu-cat-inside">
                                     <h3><i class="demo-icon icon-menu"></i> <a href="/catalog/">каталог</a></h3>

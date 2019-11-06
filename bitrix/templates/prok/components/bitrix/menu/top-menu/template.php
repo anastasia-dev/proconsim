@@ -8,6 +8,7 @@
 <?
 $previousLevel = 0;
 foreach($arResult as $arItem):?>
+
 	<?if ($previousLevel && $arItem["DEPTH_LEVEL"] < $previousLevel):?>
 		<?=str_repeat("</ul></li>", ($previousLevel - $arItem["DEPTH_LEVEL"]));?>
 	<?endif?>
@@ -26,8 +27,16 @@ foreach($arResult as $arItem):?>
 
 		<?if ($arItem["PERMISSION"] > "D"):?>
 
+            <? $addClass = '';
+                if ($arItem["SELECTED"]){
+                    $addClass = 'active ';
+                }
+                if($arItem["PARAMS"]['class']) {
+                    $addClass .= $arItem["PARAMS"]['class'].' ';
+                }
+            ?>
 			<?if ($arItem["DEPTH_LEVEL"] == 1):?>
-				<li <?if ($arItem["SELECTED"]):?>class="active"<?endif?>><a href="<?=$arItem["LINK"]?>" class="<?if ($arItem["SELECTED"]):?>root-item-selected<?else:?>root-item<?endif?>"><?=$arItem["TEXT"]?></a></li>
+				<li class="<?=$addClass?>" ><a href="<?=$arItem["LINK"]?>" class="<?if ($arItem["SELECTED"]):?>root-item-selected<?else:?>root-item<?endif?>"><?=$arItem["TEXT"]?></a></li>
 			<?else:?>
 				<li <?if ($arItem["SELECTED"]):?>class="subactive active"<?endif?>><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
 			<?endif?>

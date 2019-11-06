@@ -1,5 +1,14 @@
 <?
 $aMenuLinks = Array(
+    Array(
+    "Акции",
+    "stock/",
+    Array(),
+    Array(
+        "class" => "actionsMenuLi",
+    ),
+    ""
+),
 	Array(
 		"О компании", 
 		"/about/", 
@@ -34,6 +43,7 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
-	)
+	),
 );
+
 ?>

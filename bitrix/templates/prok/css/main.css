@@ -732,7 +732,7 @@ nav ul li, nav ul li a {
 
 nav ul li a {
 	padding: 11px 7px;
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-family: "OpenSansBold";
 }
@@ -3099,4 +3099,36 @@ h5.h5InText {
 	color: #004a80;
 	font-family: Verdana;
 	font-size: 13pt;
+}
+
+.bx-authform.contacts-form {
+    margin: 0 auto;
+}
+
+div.catalog-menu-block {
+    padding-right: 5px;
+}
+
+div#topsearch {
+    padding-left: 5px;
+    /*width:23%;*/
+}
+
+div#topsearch input[name='q'] {
+    padding-right: 2px;
+}
+
+input[name='q']::-ms-input-placeholder {
+    font-size: 4px!important;
+}
+
+/*div#topMenu {
+    width: 60.333333%;
+}*/
+
+li.actionsMenuLi a{
+	background-color: white;
+	color: grey!important;
+	border-bottom: 1px solid #9d9d9d;
+	border-top: 1px solid #9d9d9d;
 }

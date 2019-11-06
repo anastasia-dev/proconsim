@@ -636,11 +636,24 @@ IncludeTemplateLangFile(__FILE__);
             $( "#fullText" ).toggle();
         });
 
-        $(".api-search-input").click(function () {
+        jQuery(function($){
+            $(document).mouseup(function (e){ // событие клика по веб-документу
+                var div = $(".api-search-input"); // тут указываем ID элемента
+                $('#topsearch').prop('className','col-md-10');
+                $('#topMenu').hide();
+                if (!div.is(e.target) // если клик был не по нашему блоку
+                    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+                    $('#topsearch').prop('className','col-md-3');
+                    $('#topMenu').show();
+                }
+            });
+        });
+
+/*        $(".api-search-input").click(function () {
             //console.log("IN");
             $('#topsearch').prop('className','col-md-10');
             $('#topMenu').hide();
-        });
+        });*/
 
     });
     function SHMenu(){
