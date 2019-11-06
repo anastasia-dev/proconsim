@@ -4,6 +4,7 @@ bitrix/activities/
 bitrix/admin/
 bitrix/backup/
 bitrix/cache/
+bitrix/stack_cache/
 bitrix/css/
 bitrix/fonts/
 bitrix/gadgets/
@@ -15,6 +16,9 @@ bitrix/themes/
 bitrix/tools/
 bitrix/tmp/
 bitrix/wizards/
+bitrix/catalog_export/
+bitrix/js/ipol.sdek/
+
 
 
 /upload
@@ -24,6 +28,7 @@ bitrix/wizards/
 *.sql
 *.geojson
 *.txt
+*.log
 
 .htaccess
 adminer.php
