@@ -218,7 +218,17 @@ IncludeTemplateLangFile(__FILE__);
                     </div>
                     <div class="col-lg-3 col-lg-pull-1 col-md-8 col-md-pull-1 col-sm-6 col-sm-pull-2 col-xs-12">
                         <div class="header-mode">
-                            <div class="header-mode-text">Режим работы:</div>
+                           <div class="header-mode-text">Текст позиционирования для юр. лиц</div>
+                        </div>
+                    </div>
+                    <div class="hidden-lg col-md-12 col-sm-12 hidden-xs"><div style="height: 1px;background-color: #dbd8d8;margin: 15px 0 20px 0;"></div></div>
+                    <div class="col-lg-3 col-lg-pull-1 col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 phone-col-head">
+                            <div class="phone-box">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/img/ico-phone-2.png" alt="">
+                                <?echo $_SESSION['REGION_PHONE'];?>
+                            </div>
+                            <div class="header-mode">
                             <div class="header-mode-time">
                                 <?if($_SESSION['REGION_MODE']){?>
                                     <?echo $_SESSION['REGION_MODE'];?>
@@ -226,23 +236,16 @@ IncludeTemplateLangFile(__FILE__);
                                     <?echo "ПН-ПТ с 9.00 до 18.00";?>
                                 <?}?>
                             </div>
-                        </div>
-                    </div>
-                    <div class="hidden-lg col-md-12 col-sm-12 hidden-xs"><div style="height: 1px;background-color: #dbd8d8;margin: 15px 0 20px 0;"></div></div>
-                    <div class="col-lg-3 col-lg-pull-1 col-md-3 col-sm-4 col-xs-12">
-                        <div class="hidden-md hidden-sm hidden-xs" style="font-size: 14px;font-family: 'OpenSansBold';color: #62687e;">Почта для заявок</div>
-                        <div class="email-box"><img src="<?=SITE_TEMPLATE_PATH?>/images/mail-new.png" alt="Почта для заявок"><a href="mailto:<?echo $_SESSION['REGION_EMAIL'];?>" style="font-size: 14px;font-family: 'OpenSansBold';color: #62687e;margin-left: 10px;"><?echo $_SESSION['REGION_EMAIL'];?></a></div>
-                    </div>
-                    <div class="col-lg-2 col-lg-pull-1 col-md-9 col-sm-8 col-xs-12">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-4 col-xs-6 col-sm-6">
-                                <div class="phone-box">
-                                    <img src="<?=SITE_TEMPLATE_PATH?>/img/ico-phone-2.png" alt="">
-                                    <?echo $_SESSION['REGION_PHONE'];?>
-                                </div>
                             </div>
-                            <div class="col-lg-12 col-md-8 col-xs-6 col-sm-6">
+                        </div>
+                        <? /*<div class="hidden-md hidden-sm hidden-xs" style="font-size: 14px;font-family: 'OpenSansBold';color: #62687e;">Почта для заявок</div> */?>
+
+                    </div>
+                    <div class="col-lg-2 col-lg-pull-1 col-md-6 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6">
                                 <div class="header-call"><a class="popup-with-form" href="#call-form">Заказать звонок</a></div>
+                                <div class="email-box"><img src="<?=SITE_TEMPLATE_PATH?>/images/mail-new.png" alt="Почта для заявок"><a href="mailto:<?echo $_SESSION['REGION_EMAIL'];?>" style="font-size: 13px;font-family: 'OpenSansBold';color: #62687e;margin-left: 10px;"><?echo $_SESSION['REGION_EMAIL'];?></a></div>
                             </div>
                         </div>
                     </div>
