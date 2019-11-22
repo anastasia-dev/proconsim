@@ -286,6 +286,7 @@ IncludeTemplateLangFile(__FILE__);
     );?>
     <section class="action">
         <div class="container">
+
             <?/*$APPLICATION->IncludeComponent(
                 "bitrix:news.line",
                 "index-stock",
@@ -417,6 +418,68 @@ IncludeTemplateLangFile(__FILE__);
             </div>
         </div>
     </section>
+<?endif;?>
+<?if ($GLOBALS["APPLICATION"]->GetCurPage() == "/"):?>
+<section class="formSect" style="background: #fff;">
+    <?$APPLICATION->SetAdditionalCSS("/bitrix/templates/prok/components/proc/main.register/registr-new/style.css");?>
+    <div class="container">
+        <div class="row">
+    <div class="col-xs-12 col-md-12 form-box">
+        <div class="bx-authform contacts-form" style='max-width: unset;'>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:form.result.new",
+            "footer_form",
+            Array(
+                "AJAX_MODE" => "Y",
+                "CACHE_TIME" => "3600",
+                "CACHE_TYPE" => "N",
+                "CHAIN_ITEM_LINK" => "",
+                "CHAIN_ITEM_TEXT" => "",
+                "EDIT_URL" => "",
+                "IGNORE_CUSTOM_TEMPLATE" => "Y",
+                "LIST_URL" => "",
+                "SEF_FOLDER" => "",
+                "POPUP_MODE" => "N",
+                "SEF_MODE" => "N",
+                "SUCCESS_URL" => "",
+                "USE_EXTENDED_ERRORS" => "Y",
+                "WEB_FORM_ID" => "1"
+            )
+        );?>
+        </div>
+    </div></div></div>
+</section>
+<?else:?>
+<section class="formSect">
+    <?$APPLICATION->SetAdditionalCSS("/bitrix/templates/prok/components/proc/main.register/registr-new/style.css");?>
+    <div class="container wrap">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 form-box">
+                <div class="bx-authform contacts-form" style='max-width: 95%;'>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:form.result.new",
+                        "footer_form",
+                        Array(
+                            "AJAX_MODE" => "Y",
+                            "CACHE_TIME" => "3600",
+                            "CACHE_TYPE" => "N",
+                            "CHAIN_ITEM_LINK" => "",
+                            "CHAIN_ITEM_TEXT" => "",
+                            "EDIT_URL" => "",
+                            "IGNORE_CUSTOM_TEMPLATE" => "Y",
+                            "LIST_URL" => "",
+                            "SEF_FOLDER" => "",
+                            "POPUP_MODE" => "N",
+                            "SEF_MODE" => "N",
+                            "SUCCESS_URL" => "",
+                            "USE_EXTENDED_ERRORS" => "Y",
+                            "WEB_FORM_ID" => "1"
+                        )
+                    );?>
+                </div>
+            </div></div>
+    </div>
+</section>
 <?endif;?>
 <footer>
     <div class="container">
@@ -972,6 +1035,43 @@ IncludeTemplateLangFile(__FILE__);
 
         result.setValue('_________________'); // устанавливаем значение
     });
+    BX.ready(function() {
+        var result = new BX.MaskedInput({
+            mask: '+7 (999) 999-99-99', // устанавливаем маску
+            input: BX('phoneBottom'),
+            placeholder: '_' // символ замены +7 ___ ___ __ __
+        });
+
+        /*result.setValue('_________________'); // устанавливаем значение*/
+    });
+
+    window.addEventListener("load", function() {
+        const inputs = document.querySelectorAll('.uploadFile');
+
+        for (let input of inputs) {
+            console.log(input);
+            let span = input.parentElement.querySelector('.fileLabelLinkStyle'),
+                labelVal = span.innerHTML;
+
+            input.addEventListener('change', function (e) {
+                let fileName = '';
+                if (this.files && this.files.length > 1) {
+                    fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+                } else {
+                    fileName = e.target.value.split('\\').pop();
+                }
+                if (fileName) {
+                    console.log(span, 'label');
+                    console.log(span.querySelector('span'), 'span');
+
+                    span.innerHTML = fileName;
+                    // label.querySelector('span').innerHTML = fileName;
+                } else {
+                    span.innerHTML = labelVal;
+                }
+            });
+        }
+    });
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127498102-2"></script>
@@ -994,6 +1094,6 @@ IncludeTemplateLangFile(__FILE__);
 <script src="/js/ingevents.4.0.8.min.js"></script>
 <!-- calltouch -->
 <script src="https://mod.calltouch.ru/init.js?id=azos7bmy"></script>
-<!-- /calltouch -->	
+<!-- /calltouch -->
 </body>
 </html>

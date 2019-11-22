@@ -3011,6 +3011,22 @@ textarea.register-form{
 	outline: 0;
 }
 
+.formSect textarea {
+	width: 100%;
+	font-size: 18px;
+	margin: 0;
+	padding: 4px 4px;
+	border: 1px solid #ccd5db;
+	border-radius: 7px;
+	background: #f8fafc;
+	outline: 0;
+	resize: none;
+	height: 122px;
+}
+.formSect input {
+	border-radius: 7px;
+}
+
 .check-inn{
 	color: red;
 	font-size: 14px;
@@ -3131,7 +3147,7 @@ input[name='q']::-ms-input-placeholder {
 }*/
 
 #horizontal-multilevel-menu li.actionsMenuLi a{
-	background-color: white;
+	background-color: #f3f3f3;
 	color: grey;
 	border-bottom: 1px solid #9d9d9d;
 	border-top: 1px solid #9d9d9d;
@@ -3143,4 +3159,81 @@ input[name='q']::-ms-input-placeholder {
 .header-mode-time {
     margin-left: 15px;
     margin-top: 15px;
+}
+
+h2.formH2 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    text-align: center;
+}
+
+.formSect {
+	margin-bottom: -35px;
+	padding-bottom: 35px;
+}
+
+.formSect .btn-view.btn-blue {
+	margin: 20px auto;
+	display: block;
+}
+
+.formSect .form-box {
+	margin-top: 20px;
+}
+.formSect .errortext {
+	color: red;
+}
+
+#drop-area, #drop-area-cont {
+	border: 1px solid #ccd5db;
+	border-radius: 7px;
+	margin: 0 auto;
+	padding: 45px 5px 5px 5px;
+	cursor: pointer;
+	text-align: center;
+	height: 122px;
+}
+
+label.addFileInput {
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.fileLabelLinkStyle {
+	color: #337ab7;
+}
+p {
+	margin-top: 0;
+}
+.my-form {
+	margin-bottom: 10px;
+}
+#gallery {
+	margin-top: 10px;
+}
+#gallery img {
+	width: 150px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.button {
+	display: inline-block;
+	padding: 10px;
+	background: #ccc;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.button:hover {
+	background: #ddd;
+}
+#upload, #uploadCont {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
 }
