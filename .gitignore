@@ -18,7 +18,7 @@ bitrix/tmp/
 bitrix/wizards/
 bitrix/catalog_export/
 bitrix/js/ipol.sdek/
-
+bitrix/.settings.php
 
 
 /upload
