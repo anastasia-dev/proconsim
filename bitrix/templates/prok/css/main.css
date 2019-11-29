@@ -3237,3 +3237,12 @@ p {
 	position: absolute;
 	z-index: -1;
 }
+
+#bx-soa-order-form .locked {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.bx-cart-starrequired, #reg_active_order {
+	font-size: 14px;
+}

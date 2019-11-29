@@ -472,7 +472,14 @@ else
 						}
 						?>
 					</div>
-					<a href="javascript:void(0)" style="margin: 10px 0" class="pull-right btn btn-default btn-lg hidden-xs" data-save-button="true">
+					<div class="checkbox">
+					<div class="bx-authform-label-container bx-cart-starrequired"><span class="bx-authform-starrequired">*</span>Обязательные для заполнения поля</div>
+							<label class="main-user-consent-request" for="reg_active_order_input" id="reg_active_order">
+								<input type="checkbox" required="required" value="Y" name="" id="reg_active_order_input" >
+								<span class="main-user-consent-request-announce">Я принимаю условия <a href="/agreement/" target="_blank">политики обработки персональных данных</a></span>
+							</label>
+					</div>
+					<a href="javascript:void(0)" style="margin: 10px 0" id="ORDER_CONFIRM_BUTTON" class="pull-right btn btn-default btn-lg hidden-xs locked" data-save-button="true">
 						<?=$arParams['MESS_ORDER']?>
 					</a>
 				</div>

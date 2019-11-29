@@ -1049,7 +1049,6 @@ IncludeTemplateLangFile(__FILE__);
         const inputs = document.querySelectorAll('.uploadFile');
 
         for (let input of inputs) {
-            console.log(input);
             let span = input.parentElement.querySelector('.fileLabelLinkStyle'),
                 labelVal = span.innerHTML;
 
@@ -1061,17 +1060,23 @@ IncludeTemplateLangFile(__FILE__);
                     fileName = e.target.value.split('\\').pop();
                 }
                 if (fileName) {
-                    console.log(span, 'label');
-                    console.log(span.querySelector('span'), 'span');
-
                     span.innerHTML = fileName;
-                    // label.querySelector('span').innerHTML = fileName;
                 } else {
                     span.innerHTML = labelVal;
                 }
             });
         }
     });
+$(document).on('click', '#reg_active_order', function(){
+		if ($(this).find('input#reg_active_order_input').is(':checked'))
+		{
+			$('#ORDER_CONFIRM_BUTTON').removeClass('locked');
+		}
+		else
+		{
+			$('#ORDER_CONFIRM_BUTTON').addClass('locked');
+		}
+     });
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127498102-2"></script>
