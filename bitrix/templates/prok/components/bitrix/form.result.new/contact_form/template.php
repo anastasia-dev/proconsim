@@ -61,7 +61,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
                 <div class="col-xs-12 col-md-6">
                     <div class="bx-authform-formgroup-container">
-                        <div class="bx-authform-label-container"><?=$arResult["QUESTIONS"]["file"]["CAPTION"]?></div>
+                        <div class="bx-authform-label-container"><?=$arResult["QUESTIONS"]["file"]["CAPTION"]?><img class="labelIcon" src="/bitrix/templates/prok/components/bitrix/form.result.new/contact_form/images/paper-clips.png"></div>
                         <div class="bx-authform-input-container" id="drop-area-cont"><label for="uploadCont" class="addFileInput"><?=$arResult["QUESTIONS"]["file"]["HTML_CODE"];?><span class="fileLabelLinkStyle">Выбрать файл</span></label></div>
                     </div>
                 </div>

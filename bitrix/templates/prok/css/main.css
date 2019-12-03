@@ -3246,3 +3246,8 @@ p {
 .bx-cart-starrequired, #reg_active_order {
 	font-size: 14px;
 }
+
+.bx-authform-label-container img.labelIcon {
+	max-width: 22px;
+    margin-left: 5px;
+}

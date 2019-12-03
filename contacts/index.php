@@ -113,7 +113,6 @@ while($obRegions = $resRegions->GetNextElement()){
             <img src="<?=SITE_TEMPLATE_PATH?>/img/branches-map.png" alt="" class="img-responsive">
         </div>
         <div class="branches_list">
-            <div class="row">
                 <?$APPLICATION->IncludeComponent("bitrix:news.list", "regional-office", Array(
                     "COMPONENT_TEMPLATE" => ".default",
                     "IBLOCK_TYPE" => "references",	// Тип информационного блока (используется только для проверки)
@@ -175,7 +174,6 @@ while($obRegions = $resRegions->GetNextElement()){
                 ),
                     false
                 );?>
-            </div>
         </div>
     </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

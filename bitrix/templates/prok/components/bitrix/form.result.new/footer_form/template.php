@@ -1,6 +1,5 @@
 <?
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-$arResult["arAnswers"]["FORM_NOTE"] == "Менеджер очень рад, что получил Вашу заявку! Как только он успокоится – сразу свяжется в Вами!";
 ?>
 <?if ($arResult["isFormErrors"] == "Y"):?><?=$arResult["FORM_ERRORS_TEXT"];?><?endif;?>
 
@@ -71,7 +70,7 @@ $arResult["arAnswers"]["FORM_NOTE"] == "Менеджер очень рад, чт
 
                              <div class="col-xs-12 col-md-6">
                                  <div class="bx-authform-formgroup-container">
-                                     <div class="bx-authform-label-container"><?=$arResult["QUESTIONS"]["SIMPLE_QUESTION_581"]["CAPTION"]?></div>
+                                     <div class="bx-authform-label-container"><?=$arResult["QUESTIONS"]["SIMPLE_QUESTION_581"]["CAPTION"]?><img class="labelIcon" src="/bitrix/templates/prok/components/bitrix/form.result.new/footer_form/images/paper-clips.png"></div>
                                      <div class="bx-authform-input-container" id="drop-area"><label for="upload" class="addFileInput"><span class="fileLabelLinkStyle">Выбрать файл</span></label><?=$arResult["QUESTIONS"]["SIMPLE_QUESTION_581"]["HTML_CODE"];?></div>
                                  </div>
                              </div>
@@ -85,13 +84,13 @@ $arResult["arAnswers"]["FORM_NOTE"] == "Менеджер очень рад, чт
                     <label><?=$arResult["QUESTIONS"]["SIMPLE_QUESTION_327"]["HTML_CODE"];?> Я принимаю условия <a href="/agreement/" target="_blank">политики обработки персональных данных</a></label>
                 </div>
                 <? /* <input type="submit" class="btn-view btn-blue" name="register_submit_button" value="Отправить" style='margin: 10px auto; display: block;'/> */ ?>
-                <input class="btn-view btn-blue" <?=(intval($arResult["F_RIGHT"]) < 10 ? "disabled=\"disabled\"" : "");?> type="submit" name="web_form_submit" value="Отправить запрос" />
+                <input class="btn-view btn-blue" <?=(intval($arResult["F_RIGHT"]) < 10 ? "disabled=\"disabled\"" : "");?> type="submit" name="web_form_submit" value="Жду предложение!" />
 <?=$arResult["FORM_FOOTER"]?>
     </div>
 <?
 } else { ?>
     <div class="bx-authform-success">
-        <p>Спасибо! Ваша заявка принята!</p>
+        <p>Менеджер очень рад, что получил Вашу заявку! Как только он успокоится – сразу свяжется в Вами!</p>
     </div>
 <? } ?>
 
